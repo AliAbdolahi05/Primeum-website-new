@@ -1,5 +1,4 @@
-/* style.css */
-
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 header {
   background-color: #1c1f26;
   padding: 1rem 2rem;
@@ -50,6 +50,7 @@ header {
   color: #61dafb;
 }
 
+/* Hero Section (قبلی) */
 .hero {
   position: relative;
   overflow: hidden;
@@ -63,13 +64,11 @@ header {
   color: #ffffff;
 }
 
-/* Typed text style */
 #typed-text {
   color: #61dafb;
   font-weight: 700;
 }
 
-/* Blinking cursor */
 .cursor {
   display: inline-block;
   background-color: #61dafb;
@@ -82,7 +81,6 @@ header {
   50% { background-color: transparent; }
 }
 
-/* Canvas for particles */
 #particle-canvas {
   position: absolute;
   top: 0;
@@ -93,7 +91,6 @@ header {
   z-index: 0;
 }
 
-/* Make sure hero-content is above canvas */
 .hero-content {
   position: relative;
   z-index: 1;
@@ -126,86 +123,94 @@ header {
   background-color: #21a1f1;
 }
 
-.section {
-  padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #61dafb;
-  text-align: center;
-}
-
-.about p {
-  text-align: center;
-  color: #ccc;
-  max-width: 700px;
-  margin: auto;
-}
-
-/* Resume Button */
-.resume-btn {
-  display: inline-flex;
+/* About Section */
+.about-card {
+  background-color: #1c1f26;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 16px;
-  transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  margin-top: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-.resume-btn:hover {
-  background: linear-gradient(135deg, #4338ca, #6d28d9);
-  transform: translateY(-3px);
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #61dafb;
 }
 
-.resume-icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 8px;
+.about-text h2 {
+  color: #61dafb;
+  margin-bottom: 1rem;
 }
 
-.project-list {
+.skills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.skills span {
+  background-color: #2a2e39;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #61dafb;
+}
+
+/* Projects Section */
+.project-grid {
   display: grid;
-  gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 2rem;
+  gap: 1.5rem;
 }
 
-.project {
+.project-card {
   background-color: #1c1f26;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project h3 {
-  margin-bottom: 0.5rem;
-  color: #ffffff;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(97, 218, 251, 0.4);
 }
 
-.project p {
+.project-card h3 a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.project-card p {
   color: #bbb;
 }
 
-.contact form {
+/* Contact Section */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 500px;
-  margin: 2rem auto;
 }
 
-.contact input,
-.contact textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 0.8rem;
   border: none;
   border-radius: 6px;
@@ -213,7 +218,7 @@ header {
   color: #e4e6eb;
 }
 
-.contact button {
+.contact-form button {
   padding: 0.8rem;
   background-color: #61dafb;
   color: #0f1117;
@@ -224,35 +229,34 @@ header {
   transition: background 0.3s;
 }
 
-.contact button:hover {
+.contact-form button:hover {
   background-color: #21a1f1;
 }
 
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  color: #aaa;
+}
+
+.contact-info a {
+  color: #61dafb;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
   background-color: #1c1f26;
   color: #aaa;
   font-size: 0.9rem;
+  border-top: 1px solid #2a2e39;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-links {
+  .about-card {
     flex-direction: column;
-    gap: 0.5rem;
+    text-align: center;
   }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .section h2 {
-    font-size: 1.7rem;
-  }
-}
-
-/* Animation keyframes */
-@keyframes blink {
-  50% { background-color: transparent; }
 }
