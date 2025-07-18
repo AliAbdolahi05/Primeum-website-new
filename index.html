@@ -20,6 +20,7 @@
     </nav>
   </header>
 
+  <!-- Hero Section (همان قبلی) -->
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>سلام، <span id="typed-text"></span><span class="cursor">|</span></h1>
@@ -29,67 +30,73 @@
     <canvas id="particle-canvas"></canvas>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="about section">
-    <h2>درباره من</h2>
-    <p>
-     من علی عبدالهی هستم، برنامه‌نویسی با تمرکز بر زبان Python و توسعه وب با HTML و CSS. در سال‌های اخیر، مجموعه‌ای از پروژه‌های کاربردی طراحی و پیاده‌سازی کرده‌ام که شامل بازی‌های تعاملی ساده، سیستم‌های عددی و پیاده‌سازی الگوریتم‌های پایه است.
-
-دانش من تنها به سطح تئوری محدود نمی‌شود؛ تجربه‌ی عملی در طراحی و کدنویسی، توانایی تحلیل نیازها و پیاده‌سازی راه‌حل‌های بهینه از مهم‌ترین ویژگی‌های حرفه‌ای من است.
-در کنار برنامه‌نویسی، سابقه تدریس نرم‌افزار Microsoft Excel را نیز دارم که باعث تقویت توانایی‌ام در تسلط بر ابزارهای تحلیلی و انتقال دقیق مفاهیم شده است.
-
-هدف من، توسعه مهارت‌های تخصصی در حوزه علوم کامپیوتر و مشارکت در پروژه‌های پیشرفته نرم‌افزاری در سطح بین‌المللی است.
-اینم رزومه من ⚆_⚆
-    </p>
-<a href="Ali_Abdolahi_CV.pdf" target="_blank" class="resume-btn">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
-         stroke="currentColor" class="resume-icon">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-              d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/>
-    </svg>
-    دانلود رزومه من
-</a>
-
-  </section>
-
-  <section id="projects" class="projects section">
-    <h2>پروژه‌ها</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>وب‌سایت شخصی</h3>
-        <p>همین وب‌سایتی که الان در حال دیدنش هستی 😄 با HTML, CSS, JavaScript طراحی شده.</p>
-      </div>
-      <div class="project">
-        <h3><a href="https://github.com/AliAbdolahi05/rock-paper-scissors" target="_blank">بازی سنگ کاغذ قیچی</a></h3>
-        <p>بازی کلاسیک سنگ، کاغذ، قیچی با پایتون. شامل رابط کاربری ساده‌ی متنی و منطق بازی با قابلیت ادامه بازی.</p>
-      </div>
-      <div class="project">
-        <h3><a href="https://github.com/AliAbdolahi05/Number-Guessing-Game" target="_blank">بازی حدس عدد</a></h3>
-        <p>یک بازی ساده برای تمرین الگوریتم‌ها و دریافت ورودی از کاربر. در این بازی عدد تصادفی تولید می‌شود و بازیکن باید آن را حدس بزند.</p>
-      </div>
-      <div class="project">
-        <h3><a href="https://github.com/AliAbdolahi05/tic-tac-toe" target="_blank">بازی دوز (Tic-Tac-Toe)</a></h3>
-        <p>پیاده‌سازی بازی دوز دو نفره در محیط ترمینال با پایتون. دارای بررسی برنده و حالت مساوی.</p>
+    <div class="about-card">
+      <img src="profile.jpg" alt="Ali Abdolahi" class="profile-img" />
+      <div class="about-text">
+        <h2>درباره من</h2>
+        <p>
+          من علی عبدالهی هستم، برنامه‌نویس فرانت‌اند و پایتون. با تجربه طراحی وب‌سایت‌های مدرن و 
+          پروژه‌های کاربردی، عاشق یادگیری تکنولوژی‌های جدید و حل چالش‌های برنامه‌نویسی هستم.
+        </p>
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>Excel</span>
+        </div>
+        <a href="Ali_Abdolahi_CV.pdf" target="_blank" class="resume-btn">
+          دانلود رزومه
+        </a>
       </div>
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <h2>پروژه‌ها</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>وب‌سایت شخصی</h3>
+        <p>همین وب‌سایتی که الان در حال دیدنش هستید. ساخته شده با HTML, CSS و JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/AliAbdolahi05/rock-paper-scissors" target="_blank">بازی سنگ کاغذ قیچی</a></h3>
+        <p>بازی کلاسیک با پایتون، رابط کاربری متنی و منطق بازی حرفه‌ای.</p>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/AliAbdolahi05/Number-Guessing-Game" target="_blank">بازی حدس عدد</a></h3>
+        <p>بازی ساده برای تمرین الگوریتم‌ها و دریافت ورودی از کاربر.</p>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/AliAbdolahi05/tic-tac-toe" target="_blank">بازی دوز (Tic-Tac-Toe)</a></h3>
+        <p>پیاده‌سازی بازی دو نفره در ترمینال با پایتون، همراه با حالت مساوی.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="contact section">
     <h2>تماس با من</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="نام" required />
-      <input type="email" placeholder="ایمیل" required />
-      <textarea placeholder="پیام شما" required></textarea>
-      <button type="submit">ارسال</button>
-    </form>
-    <div class="contact-info">
-      <p>📧 ایمیل: ali1388009009@gmail.com</p>
-      <p>🐙 گیت‌هاب: <a href="https://github.com/AliAbdolahi05" target="_blank">AliAbdolahi05</a></p>
-      <p>💬 تلگرام: <a href="https://t.me/Master_n_o_t" target="_blank">@Master_n_o_t</a></p>
+    <div class="contact-container">
+      <form id="contact-form" class="contact-form">
+        <input type="text" placeholder="نام شما" required />
+        <input type="email" placeholder="ایمیل شما" required />
+        <textarea placeholder="پیام شما" required></textarea>
+        <button type="submit">ارسال پیام</button>
+      </form>
+      <div class="contact-info">
+        <p>📧 ایمیل: ali1388009009@gmail.com</p>
+        <p>🐙 گیت‌هاب: <a href="https://github.com/AliAbdolahi05" target="_blank">AliAbdolahi05</a></p>
+        <p>💬 تلگرام: <a href="https://t.me/Master_n_o_t" target="_blank">@Master_n_o_t</a></p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p> ^_^ AliAbdollahi | ساخت شده توسط علی عبدالهی</p>
+    <p>© 2025 Ali Abdolahi | ساخته شده با ❤ و کدنویسی</p>
   </footer>
 
   <script src="script.js"></script>
