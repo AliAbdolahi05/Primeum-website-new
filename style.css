@@ -51,6 +51,8 @@ header {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   height: 90vh;
   background: linear-gradient(120deg, #1c1f26, #0f1117);
   display: flex;
@@ -58,6 +60,43 @@ header {
   align-items: center;
   text-align: center;
   padding: 2rem;
+  color: #ffffff;
+}
+
+/* Typed text style */
+#typed-text {
+  color: #61dafb;
+  font-weight: 700;
+}
+
+/* Blinking cursor */
+.cursor {
+  display: inline-block;
+  background-color: #61dafb;
+  width: 3px;
+  margin-left: 3px;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { background-color: transparent; }
+}
+
+/* Canvas for particles */
+#particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Make sure hero-content is above canvas */
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -211,4 +250,9 @@ footer {
   .section h2 {
     font-size: 1.7rem;
   }
+}
+
+/* Animation keyframes */
+@keyframes blink {
+  50% { background-color: transparent; }
 }
