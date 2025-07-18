@@ -182,5 +182,30 @@ footer {
 
   .section h2 {
     font-size: 1.7rem;
+  .resume-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resume-btn:hover {
+    background: linear-gradient(135deg, #4338ca, #6d28d9);
+    transform: translateY(-3px);
+}
+
+.resume-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
   }
 }
